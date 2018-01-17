@@ -15,3 +15,19 @@ NOTICE
 ------
 
  - Non system dependencies (e.g. libx264, libvpx) are disabled by default.
+
+
+If the error “yasm/nasm not found or too old” is displayed after typing the ./configure command. Steps to follow: 
+1.  “wget http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz”
+
+2. ” tar -xvf yasm-1.3.0.tar.gz” to uncompressed the yasm-1.3.0.tar.gz file
+
+3. “cd yasm-1.3.0”  
+
+4. ‘./configure‘ 
+
+5. ‘make‘ to build FFmpeg.
+
+6. ‘make install‘ to install all binaries and libraries you built.
+
+7. type “yasm –version” to check installation.
